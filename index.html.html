@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Student Health Emergency System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">🩺 CampusCare</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Students</a>
+      <a href="#">Emergency</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Smart Student Health Emergency System</h1>
+      <p>
+        A secure nursing support website for quick access to student medical
+        information during emergencies.
+      </p>
+      <button class="primary-btn">Explore System</button>
+    </div>
+    <div class="hero-image">
+      <div class="nurse-card">
+        <h3>College Clinic</h3>
+        <p>Fast. Safe. Organized.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <h2>Search Student Medical Record</h2>
+    <p>Enter Student ID to view health information</p>
+
+    <div class="search-box">
+      <input type="text" id="studentId" placeholder="Enter Student ID" />
+      <button onclick="searchStudent()">Search</button>
+    </div>
+  </section>
+
+  <section class="profile-section">
+    <h2>Student Health Profile</h2>
+
+    <div class="profile-card" id="profileCard">
+      <div class="profile-grid">
+        <div><strong>Student Name:</strong> <span id="name">-</span></div>
+        <div><strong>Student ID:</strong> <span id="id">-</span></div>
+        <div><strong>Major:</strong> <span id="major">-</span></div>
+        <div><strong>Level:</strong> <span id="level">-</span></div>
+        <div><strong>Blood Type:</strong> <span id="blood">-</span></div>
+        <div><strong>Allergies:</strong> <span id="allergy">-</span></div>
+        <div><strong>Diseases:</strong> <span id="disease">-</span></div>
+        <div><strong>Medication:</strong> <span id="medication">-</span></div>
+        <div><strong>Emergency Contact:</strong> <span id="contact">-</span></div>
+      </div>
+
+      <div class="alert-box" id="alertBox">
+        ⚠ Emergency Alert: This student has a critical medical condition.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Smart Student Health Emergency System | College Clinic</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

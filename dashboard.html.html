@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>CampusCare Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+  <h2>CampusCare Dashboard</h2>
+  <div>
+    <a href="dashboard.html" style="color:white; margin-right:15px;">Dashboard</a>
+    <a href="students.html" style="color:white; margin-right:15px;">Students</a>
+    <a href="student-profile.html" style="color:white; margin-right:15px;">Profile</a>
+    <a href="emergency.html" style="color:white; margin-right:15px;">Emergency</a>
+    <a href="login.html" style="color:white;">Logout</a>
+  </div>
+</header>
+
+  <section class="dashboard-section">
+    <h1>Search Student Medical Record</h1>
+    <p>Enter Student ID to view student health information</p>
+
+    <div class="search-box">
+  <input type="text" id="studentId" placeholder="Enter Student ID" />
+  <button onclick="searchStudent()">Search</button>
+</div>
+  </section>
+
+  <section class="profile-section">
+  <h2>Student Health Profile</h2>
+
+  <<div class="profile-card">
+
+  <div class="profile-grid">
+    <div><strong>Student Name:</strong> <span id="name">-</span></div>
+    <div><strong>Student ID:</strong> <span id="id">-</span></div>
+    <div><strong>Major:</strong> <span id="major">-</span></div>
+    <div><strong>Level:</strong> <span id="level">-</span></div>
+    <div><strong>Blood Type:</strong> <span id="blood">-</span></div>
+    <div><strong>Allergies:</strong> <span id="allergy">-</span></div>
+    <div><strong>Diseases:</strong> <span id="disease">-</span></div>
+    <div><strong>Medication:</strong> <span id="medication">-</span></div>
+    <div><strong>Emergency Contact:</strong> <span id="contact">-</span></div>
+  </div>
+
+  <div class="alert-box-show" id="alertBox" style="display: none;">
+    ⚠ Emergency Alert: This student has a critical medical condition.
+  </div>
+
+  <br>
+
+  <div style="display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap;">
+  
+  <a href="student-profile.html">
+    <button class="back-btn">Full Profile</button>
+  </a>
+
+  <a href="emergency.html">
+    <button class="back-btn">Emergency</button>
+  </a>
+
+  <a href="students.html">
+    <button class="back-btn">Students List</button>
+  </a>
+
+</div>
+</div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
