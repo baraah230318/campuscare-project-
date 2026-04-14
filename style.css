@@ -1,0 +1,396 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4fbfd;
+  color: #1f2d3d;
+}
+
+.topbar {
+  background: #0f6c81;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.topbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #dff5f9, #f7fcfd);
+}
+
+.hero-text {
+  max-width: 55%;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  color: #0f6c81;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background: #0f6c81;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.primary-btn:hover {
+  background: #0c5869;
+}
+
+.hero-image {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.nurse-card {
+  background: white;
+  border-left: 6px solid #3bb5c3;
+  padding: 30px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.nurse-card h3 {
+  color: #0f6c81;
+  margin-bottom: 10px;
+}
+
+.search-section,
+.profile-section {
+  padding: 50px 40px;
+}
+
+.search-section h2,
+.profile-section h2 {
+  color: #0f6c81;
+  margin-bottom: 10px;
+}
+
+.search-section p {
+  margin-bottom: 20px;
+  color: #5b6b79;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #b8dbe2;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.search-box button {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #12879a;
+}
+
+.profile-card {
+  background: white;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-grid div {
+  background: #f7fcfd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.alert-box {
+  background: #fff4d6;
+  color: #9a6700;
+  border: 1px solid #f3d17a;
+  padding: 14px;
+  border-radius: 8px;
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f6c81;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+} 
+.login-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef8fb;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #0f6c81;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-card input,
+.login-card select {
+  padding: 12px;
+  border: 1px solid #bcdde5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.login-card button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #0f6c81;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #0b5666;
+} 
+.topbar {
+  background: #0f6c81;
+  color: white;
+  padding: 18px 30px;
+}
+
+.dashboard-section {
+  padding: 40px 30px 20px;
+}
+
+.dashboard-section h1 {
+  color: #0f6c81;
+  margin-bottom: 10px;
+}
+
+.dashboard-section p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #bcdde5;
+  border-radius: 8px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-section {
+  padding: 20px 30px 40px;
+}
+
+.profile-section h2 {
+  color: #0f6c81;
+  margin-bottom: 15px;
+}
+
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.profile-grid div {
+  background: #f7fcfd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.alert-box-show {
+  margin-top: 20px;
+  background: #fff4d6;
+  color: #9a6700;
+  border: 1px solid #f3d17a;
+  padding: 14px;
+  border-radius: 8px;
+}
+.back-btn {
+  padding: 12px 20px;
+  background: #0f6c81;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #0b5666;
+}
+.back-btn {
+  padding: 12px 20px;
+  background: #0f6c81;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #0b5666;
+}
+
+.profile-card a {
+  display: flex;
+  justify-content: flex-end;
+}
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #dbe7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+.student-table th {
+  background: #0f6c81;
+  color: white;
+}
+.emergency-title {
+  color: red;
+  font-weight: bold;
+}
+
+.emergency-box {
+  background: #fff4d6;
+  border: 1px solid #f3d17a;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
